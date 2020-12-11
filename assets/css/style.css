@@ -1,35 +1,43 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import "assets/bootstrap-3.3.7-dist/css/bootstrap.min.css";
 /* SĀKUMLAPA */
-/* html
+html
 {
     background: #FFFFFF;
-} */
-html{
-	background: #cccccc no-repeat;
+}
+body
+{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/* .container
+{
+    background: #cccccc no-repeat;
 	background-image: linear-gradient(beige, beige, #b6c9c2);
-}
-body{
-    background-color: rgba(0,0,0,0);
-}
-.container
-{
-    background: #FFFFFF;
-
-}
-
-/* rediģēšanai */
-/* body
-{
-    
-    background-color: red; 
 } */
 
-.nav
+ul.navbar-nav
 {
-    position: relative;
-    z-index: 1;
-    height: 100px;
+    width: 100%;
+    justify-content: space-between;
 }
-
+.navbar-toggler{ border: none;}
+.navbar
+{
+    width: 100%;
+    z-index: 3;
+}
+.nav-link
+{
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #060606;
+}
 /* Sparkle Video 1 */
 .Video
 { 
@@ -60,19 +68,13 @@ body{
     padding-bottom: 5%;
     padding-top: 5%;
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-
     color: #2F4858;
 }
 
 .fotos
 {
     margin: 0;
+
 }
 .col{ padding: 0;}
 @media screen and (min-width:800px){.col_3{width:22%;}}
@@ -80,4 +82,5 @@ body{
 .col img{
     padding: 0;
     width: 100%;
+    align-items: baseline;
 }
